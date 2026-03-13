@@ -7,9 +7,25 @@ import "@/styles/global.css"
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>Astro App</title>
+    <title>The Daily Advice</title>
   </head>
-  <body>
-    <slot />
+  <body class="min-h-screen bg-background text-foreground font-serif antialiased selection:bg-foreground selection:text-background">
+    <!-- Newspaper Header -->
+    <header class="border-b-4 border-foreground py-6 mb-8 text-center px-4 mx-auto max-w-7xl">
+      <h1 class="font-bold text-5xl md:text-7xl uppercase tracking-widest mb-4 font-serif">The Daily Advice</h1>
+      <div class="flex flex-col md:flex-row justify-between items-center border-t-2 border-b-2 border-foreground py-2 mt-4 text-sm md:text-base uppercase tracking-widest font-bold">
+        <span class="hidden md:inline-block">Vol. I, No. 1</span>
+        <span>Relationship Advice Column</span>
+        <span>{new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</span>
+      </div>
+    </header>
+    
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <slot />
+    </main>
+
+    <footer class="border-t-[3px] border-foreground mt-16 py-8 text-center text-sm font-semibold tracking-wide uppercase">
+      <p>&copy; {new Date().getFullYear()} The Daily Advice. All rights reserved.</p>
+    </footer>
   </body>
 </html>

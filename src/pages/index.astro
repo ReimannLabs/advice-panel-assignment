@@ -4,14 +4,106 @@ import { Button } from "@/components/ui/button"
 ---
 
 <Layout>
-  <div class="flex min-h-svh p-6">
-    <div class="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-      <div>
-        <h1 class="font-medium">Project ready!</h1>
-        <p>You may now add components and start building.</p>
-        <p>We've already added the button component for you.</p>
-        <Button client:load className="mt-2">Button</Button>
-      </div>
+  <div class="max-w-4xl mx-auto mt-8 border-x-[3px] border-b-[3px] border-foreground p-6 sm:p-10 mb-16 relative">
+    
+    <!-- Top Label -->
+    <div class="absolute -top-[18px] left-1/2 -translate-x-1/2 bg-background px-4 font-bold uppercase tracking-widest text-lg border-[3px] border-foreground">
+      Dear Julian
     </div>
+
+    <div class="text-center mb-12 mt-6 max-w-2xl mx-auto">
+       <p class="text-lg italic text-foreground/80">
+         Straight talk and honest advice for modern relationships. Have a question? Write to Julian.
+       </p>
+    </div>
+
+    <div class="space-y-12">
+      <!-- Q1 -->
+      <article>
+        <h3 class="font-bold text-2xl mb-2 leading-tight">"My partner won't do the dishes!"</h3>
+        <p class="mb-4 text-foreground/90 leading-relaxed">
+          <span class="font-bold uppercase text-sm tracking-wide mr-2">Dear Julian,</span> 
+          We've been living together for a year, and he just leaves plates in the sink. I'm at my wits' end. Should I just leave them and see who breaks first?
+        </p>
+        <p class="text-sm font-semibold text-right mb-6">— Frustrated in Florida</p>
+        
+        <div class="pl-6 border-l-4 border-foreground py-2 text-foreground/90 italic">
+          <span class="font-bold uppercase text-sm tracking-wide block mb-2 not-italic">Dear Frustrated,</span>
+          A standoff over dirty dishes is rarely about the dishes. It’s about feeling respected in your shared space. Don't play the waiting game; sit him down when neither of you is actively cooking or cleaning and explain that his ignoring the chore feels like he's ignoring you. If he doesn't step up, you have bigger fish to fry.
+        </div>
+      </article>
+
+      <!-- Q2 -->
+      <hr class="border-t-2 border-foreground/30 border-dashed" />
+      <article>
+        <h3 class="font-bold text-2xl mb-2 leading-tight">"Is it too soon to say I love you?"</h3>
+        <p class="mb-4 text-foreground/90 leading-relaxed">
+          <span class="font-bold uppercase text-sm tracking-wide mr-2">Dear Julian,</span>
+          It's been exactly three weeks, but I feel like I've known her my whole life. I want to blurt it out during dinner, but all my friends say I need to wait at least three months.
+        </p>
+        <p class="text-sm font-semibold text-right mb-6">— Smitten in Seattle</p>
+        
+        <div class="pl-6 border-l-4 border-foreground py-2 text-foreground/90 italic">
+          <span class="font-bold uppercase text-sm tracking-wide block mb-2 not-italic">Dear Smitten,</span>
+          Your friends are giving you a timeline for a tax audit, not a romance. There is no federally mandated waiting period for love. If you feel it, say it. The worst that happens is she isn't there yet—but hiding your feelings to play it cool only leads to resentment. Be brave.
+        </div>
+      </article>
+
+      <!-- Q3 -->
+      <hr class="border-t-2 border-foreground/30 border-dashed" />
+      <article>
+        <h3 class="font-bold text-2xl mb-2 leading-tight">"They keep texting their ex."</h3>
+        <p class="mb-4 text-foreground/90 leading-relaxed">
+          <span class="font-bold uppercase text-sm tracking-wide mr-2">Dear Julian,</span>
+          My girlfriend is still 'best friends' with her ex from college. They text almost every day. She insists it's totally platonic, but it makes my stomach turn. Am I being insecure?
+        </p>
+        <p class="text-sm font-semibold text-right mb-6">— Uneasy in Utah</p>
+        
+        <div class="pl-6 border-l-4 border-foreground py-2 text-foreground/90 italic">
+          <span class="font-bold uppercase text-sm tracking-wide block mb-2 not-italic">Dear Uneasy,</span>
+          You both have work to do. She needs to understand that emotional bandwidth is finite, and investing heavily in an ex can starve a current relationship. You need to assess if she's giving you reasons to distrust her *beyond* these texts. Have an open conversation about boundaries, not an ultimatum.
+        </div>
+      </article>
+
+      <!-- Q4 -->
+      <hr class="border-t-2 border-foreground/30 border-dashed" />
+      <article>
+        <h3 class="font-bold text-2xl mb-2 leading-tight">"We never fight. Is that weird?"</h3>
+        <p class="mb-4 text-foreground/90 leading-relaxed">
+          <span class="font-bold uppercase text-sm tracking-wide mr-2">Dear Julian,</span>
+          My husband and I have been married for five years and we have literally never had a screaming match. My sister says we must be repressing things. Are we?
+        </p>
+        <p class="text-sm font-semibold text-right mb-6">— Peaceful in Portland</p>
+        
+        <div class="pl-6 border-l-4 border-foreground py-2 text-foreground/90 italic">
+          <span class="font-bold uppercase text-sm tracking-wide block mb-2 not-italic">Dear Peaceful,</span>
+          Screaming is not a metric for passion; it's a metric for poor emotional regulation. If you address conflicts calmly, discuss your needs openly, and feel heard, you aren't repressing anything. You are just mature. Tell your sister to enjoy her drama. 
+        </div>
+      </article>
+
+      <!-- Q5 -->
+      <hr class="border-t-2 border-foreground/30 border-dashed" />
+      <article>
+        <h3 class="font-bold text-2xl mb-2 leading-tight">"Am I too old to date?"</h3>
+        <p class="mb-4 text-foreground/90 leading-relaxed">
+          <span class="font-bold uppercase text-sm tracking-wide mr-2">Dear Julian,</span>
+          I'm 62, recently divorced, and terrified of dating apps. Is it even worth trying to find someone new at my age, or should I just adopt another golden retriever?
+        </p>
+        <p class="text-sm font-semibold text-right mb-6">— Hesitant in Houston</p>
+        
+        <div class="pl-6 border-l-4 border-foreground py-2 text-foreground/90 italic">
+          <span class="font-bold uppercase text-sm tracking-wide block mb-2 not-italic">Dear Hesitant,</span>
+          Get the golden retriever regardless—they are excellent wingmen. But no, you are absolutely not too old. The great secret of dating in your 60s is that people finally know what they want and stop playing games. Skip the apps if they terrify you; join a walking group, a book club, or a wine tasting. Your second act is just beginning.
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Submission CTA -->
+    <div class="mt-16 text-center border-t-[3px] border-foreground pt-8">
+      <h4 class="font-bold uppercase tracking-widest text-xl mb-4">Have a dilemma?</h4>
+      <Button className="font-bold uppercase tracking-widest bg-foreground text-background hover:bg-foreground/80 px-8 py-6 rounded-none border-2 border-foreground">Write to Julian</Button>
+    </div>
+    
   </div>
 </Layout>
