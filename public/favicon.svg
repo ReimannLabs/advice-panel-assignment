@@ -1,3 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36">
-  <path fill="#000" d="M22.25 4h-8.5a1 1 0 0 0-.96.73l-5.54 19.4a.5.5 0 0 0 .62.62l5.05-1.44a1 1 0 0 0 .67-.55L18 14l4.41 8.76a1 1 0 0 0 .67.55l5.05 1.44a.5.5 0 0 0 .62-.62l-5.54-19.4a1 1 0 0 0-.96-.73Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Off-white background to match the paper styling -->
+  <rect width="64" height="64" rx="12" fill="#fbf9f6" stroke="#111111" stroke-width="4"/>
+  <!-- Classic serif 'D' -->
+  <text x="32" y="44" font-family="'Merriweather', 'Georgia', serif" font-weight="900" font-size="44" fill="#111111" text-anchor="middle">D</text>
+  <!-- Optional subtle lines -->
+  <line x1="16" y1="52" x2="48" y2="52" stroke="#111111" stroke-width="2"/>
+  <line x1="24" y1="12" x2="40" y2="12" stroke="#111111" stroke-width="2"/>
 </svg>
